@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <aside class="sidebar">
         <div class="sidebarTitle">
-            <h2>Sufra Console</h2>
+            <h2>Ghiza Console</h2>
             <span>All 0 restaurants</span>
         </div>
         <div class="sidebarList">
@@ -18,25 +20,116 @@
                 <a href="dashboard.html">Dashboard</a>
                 <a href="orders.html" class="active">Orders</a>
                 <a href="menu.html">Menu</a>
+                <a href="discount_code.html">Discount codes</a>
+                <a href="">Users & roles</a>
+                <a href="">Restaurants</a>
+                <a href="">Reviews</a>
+                <a href="">Payouts</a>
+                <a href="">Settings</a>
+
             </nav>
+        </div>
+
+        <!--PROFILE  -->
+        <div>
+            <div class="user-account">
+                <div class="user">
+                    <div class="user-profile">
+                        <img src="images/khan.jpg" alt="">
+                    </div>
+                    <div style="line-height: 0px;">
+                        <h3>Kharoty</h3>
+                        <h5>Super admin</h5>
+                    </div>
+                </div>
+                <!-- SIGN OUT -->
+                <div>
+                    <button class="sign-out">Sign out</button>
+                </div>
+            </div>
         </div>
     </aside>
 
     <div class="main">
-
         <header class="navbar">
-            <h1>Orders</h1>
-            <div class="logo">
-                <img src="images/khan.jpg" alt="">
+            <div class="page-title">
+                <h3>Dashboard</h3>
+                <h4 class="admin">Super admin</h4>
+            </div>
+            <div class="search-bar">
+                <div class="search">
+                    <input type="text" placeholder="search orders or customers">
+                </div>
+                <div class="user-profile">
+                    <img src="images/khan.jpg" alt="">
+                </div>
             </div>
         </header>
 
         <main class="content">
-            <h2>Orders</h2>
-
+            <section class="orders">
+                <div class="orders-status">
+                    <!-- STATUS TITLE -->
+                    <div class="status-title">
+                        <span class="active-order">New-1</span>
+                        <span class="status">Preparing-1</span>
+                        <span class="status">Ready-1</span>
+                        <span class="status">Completed-1</span>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                        <tr>
+                            <th>ORDER</th>
+                            <th>CUSTOMER & ITEMS</th>
+                            <th>PAYMENT</th>
+                            <th>TOTAL</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>#SF-5455 <br><span> 10.3</span></td>
+                            <td>khan<br> <span>1.Chapli Kabab</span> </td>
+                            <td>Afg bank</td>
+                            <td>AFN 250</td>
+                            <td>
+                                <span class="status accept">Accept</span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+                <!-- ORDER CARD DELEVERED -->
+                    <div class="order-card">
+                        <div class="order-det">
+                            <h3>#SF-5455 <span class="pill new" style="font-size: 12px; margin-left: 5px;">New</span></h3>
+                            <span class="order-name">1. Chapli Kabab</span>
+                        </div>
+                        <div class="total-pay">
+                            <span>Total HesabPay</span>
+                            <h3>AFN 250</h3>
+                        </div>
+                        <div class="customer-det">
+                            <span>CUSTOMER</span>
+                            <strong>Khan</strong>
+                            <span>+93789828490</span>
+                            <span>Delevery Lane-3 kot E sungi</span>
+                        </div>
+                        <div class="extra">
+                            <p>No Salad</p>
+                        </div>
+                        <div class="acc-rej-btns">
+                            <button class="accept-btn">Accept order</button>
+                            <button class="reject-btn">Reject and refund</button>
+                        </div>
+                    </div>
+            </section>
             <!-- Orders content -->
         </main>
 
     </div>
 </body>
+
 </html>

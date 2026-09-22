@@ -11,7 +11,7 @@
 <body>
     <aside class="sidebar">
         <div class="sidebarTitle">
-            <h2>Sufra Console</h2>
+            <h2>Ghiza Console</h2>
             <span>All 0 restaurants</span>
         </div>
         <div class="sidebarList">
@@ -19,7 +19,32 @@
                 <a href="dashboard.html" class="active">Dashboard</a>
                 <a href="orders.html">Orders</a>
                 <a href="menu.html">Menu</a>
+                <a href="discount_code.html">Discount codes</a>
+                <a href="">Users & roles</a>
+                <a href="">Restaurants</a>
+                <a href="">Reviews</a>
+                <a href="">Payouts</a>
+                <a href="">Settings</a>
             </nav>
+        </div>
+
+        <div>
+            <!--PROFILE  -->
+            <div class="user-account">
+                <div class="user">
+                    <div class="user-profile">
+                        <img src="images/khan.jpg" alt="">
+                    </div>
+                    <div style="line-height: 0px;">
+                        <h3>Kharoty</h3>
+                        <h5>Super admin</h5>
+                    </div>
+                </div>
+                    <!-- SIGN OUT -->
+                    <div>
+                        <button class="sign-out">Sign out</button>
+                    </div>
+            </div>
         </div>
     </aside>
 
@@ -33,7 +58,7 @@
                 <div class="search">
                     <input type="text" placeholder="search orders or customers">
                 </div>
-                <div class="logo">
+                <div class="user-profile">
                     <img src="images/khan.jpg" alt="">
                 </div>
             </div>
@@ -44,42 +69,143 @@
             <section class="cards">
                 <!-- CARD ONE -->
                 <div class="card">
-                        <span class="">Orders today</span>
-                        <h2 class="">2,000</h2>
-                        <h4 class="decrease">-2% vs yesterday</h4>
-                    </div>
-                    <!-- CARD TWO -->
-                    <div class="card">
-                        <span class="">GMS this week</span>
-                        <h2 class=""> AFG 2,050900</h2>
-                        <h4 class="decrease">-7%</h4>
-                    </div>
-                    <!-- CARD THREE -->
-                     <div class="card">
-                        <span class="">Live restaurants</span>
-                        <h2 class="">200</h2>
-                        <h4 class="live-rest"> 4 awaiting approval</h4>
-                    </div>
-                    <div class="card">
-                        <span class="">Registered customers</span>
-                        <h2 class="">22100</h2>
-                        <h4 class="increase">+211 this week</h4>
-                    </div>
+                    <h4 class="">Orders today</h4>
+                    <h2 class="">2,000</h2>
+                    <h4 class="decrease">-2% vs yesterday</h4>
+                </div>
+                <!-- CARD TWO -->
+                <div class="card">
+                    <h4 class="">GMS this week</h4>
+                    <h2 class=""> AFG 2,050900</h2>
+                    <h4 class="decrease">-7%</h4>
+                </div>
+                <!-- CARD THREE -->
+                <div class="card">
+                    <h4 class="">Live restaurants</h4>
+                    <h2 class="">200</h2>
+                    <h4 class="live-rest"> 4 awaiting approval</h4>
+                </div>
+                <div class="card">
+                    <h4 class="">Registered customers</h4>
+                    <h2 class="">22100</h2>
+                    <h4 class="increase">+211 this week</h4>
+                </div>
             </section>
 
             <!-- ORDERS PER DAY -->
-             <section class="daily-orders">
+            <section class="daily-orders">
                 <div class="days">
                     <div class="Mon day"></div>
                     <div class="Tue day"></div>
                     <div class="Wed day"></div>
                     <div class="Thu day"></div>
                     <div class="Fri day"></div>
-                    <div class="Sat day"></div>
+                    <div class="Sat heightest"></div>
                     <div class="Sun day"></div>
-
                 </div>
-             </section>
+                <section class="available-orders">
+                    <h3>Availability</h3>
+                    <div class="checkbox">
+                        <div>
+                            <h3>Pause new orders </h3>
+                            <span>Accepting new orders</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="avail-parag">
+                        <p>Tody's hours are <strong> 11:00 - 23:00 </strong> Pausing hides the kitchen in the app
+                            immediately and any order in the queue is unaffected </p>
+                    </div>
+                </section>
+            </section>
+            <!-- REVIEW QUEUE -->
+            <section class="review-queue">
+                <div>
+                    <h4> 2 restaurants are awaiting for approval</h4>
+                    <p>Document submitted-verify the licence and bank detials before going live</p>
+                </div>
+                <div class="review-btn">
+                    <button>Review Queue</button>
+                </div>
+            </section>
+
+            <!-- RECENT ORDERS -->
+            <section class="recent-orders">
+                <h4>Recent orders</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ORDER</th>
+                            <th>CUSTOMER</th>
+                            <th>MODE</th>
+                            <th>PLACED</th>
+                            <th>TOTAL</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#SF-5455</td>
+                            <td>Zahid khan</td>
+                            <td>Delivery</td>
+                            <td>10.3</td>
+                            <td>AFG 250</td>
+                            <td>
+                                <span class="pill preparing">Preparing</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#SF-5499</td>
+                            <td>Rafiq Khan</td>
+                            <td>Pickup</td>
+                            <td>25.2</td>
+                            <td>AFG 180</td>
+                            <td>
+                                <span class="pill new">new</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#SF-5498</td>
+                            <td>Mohammad Yaseen</td>
+                            <td>Delivery</td>
+                            <td>15.22</td>
+                            <td>AFG 200</td>
+                            <td>
+                                <span class="pill ready">Ready</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#SF-5491</td>
+                            <td>Abdul Qadir</td>
+                            <td>Delivery</td>
+                            <td>15.22</td>
+                            <td>AFG 200</td>
+                            <td>
+                                <span class="pill new">new</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#SF-5490</td>
+                            <td>Ataullah</td>
+                            <td>Delivery</td>
+                            <td>15.22</td>
+                            <td>AFG 200</td>
+                            <td>
+                                <span class="pill preparing">Preparing</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
         </main>
 </body>
 

@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <aside class="sidebar">
         <div class="sidebarTitle">
-            <h2>Sufra Console</h2>
+            <h2>Ghiza Console</h2>
             <span>All 0 restaurants</span>
         </div>
         <div class="sidebarList">
 
             <nav>
                 <a href="dashboard.html">Dashboard</a>
-                <a href="orders.html">Orders</a>
+                <a href="orders.html" >Orders</a>
                 <a href="menu.html" class="active">Menu</a>
+                <a href="discount_code.html">Discount codes</a>
+                <a href="">Users & roles</a>
+                <a href="">Restaurants</a>
+                <a href="">Reviews</a>
+                <a href="">Payouts</a>
+                <a href="">Settings</a>
+
             </nav>
+        </div>
+
+        <!--PROFILE  -->
+        <div>
+            <div class="user-account">
+                <div class="user">
+                    <div class="user-profile">
+                        <img src="images/khan.jpg" alt="">
+                    </div>
+                    <div style="line-height: 0px;">
+                        <h3>Kharoty</h3>
+                        <h5>Super admin</h5>
+                    </div>
+                </div>
+                <!-- SIGN OUT -->
+                <div>
+                    <button class="sign-out">Sign out</button>
+                </div>
+            </div>
         </div>
     </aside>
 
     <div class="main">
-
         <header class="navbar">
-            <h1>Menu</h1>
-            <div class="logo">
-                <img src="images/khan.jpg" alt="">
+            <div class="page-title">
+                <h3>Dashboard</h3>
+                <h4 class="admin">Super admin</h4>
+            </div>
+            <div class="search-bar">
+                <div class="search">
+                    <input type="text" placeholder="search orders or customers">
+                </div>
+                <div class="user-profile">
+                    <img src="images/khan.jpg" alt="">
+                </div>
             </div>
         </header>
-
         <main class="content">
-            <h2>Menu</h2>
-
-            <!-- Orders content -->
+            <div class="add-items">
+                <p>Changes go live in the customer app immediately.</p>
+                <button class="add-items-btn">+Add item</button>
+            </div>
+            <section class="">
+                <table class="data-table menu">
+                    <thead>
+                        <tr>
+                            <th>SECTION</th>
+                            <th>ITEM</th>
+                            <th>PRICE</th>
+                            <th>STATUS</th>
+                            <th>IN STOCK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Popular</td>
+                            <td>Chapli Kabab<br> <span>Flat minced-beef kabab, green chilli, tomato, served with naan</span> </td>
+                            <td>AFN 300</td>
+                            <td>Available</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>Popular</td>
+                            <td>Kabuli Pulao<br><span>Afghan rice with tender beef, carrots, raisins, and almonds</span></td>
+                            <td>AFN 450</td>
+                            <td>Available</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+            </section>
         </main>
+    </div>
 </body>
+
 </html>
