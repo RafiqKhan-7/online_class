@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount_codes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebarTitle">
+            <h2>Ghiza Console</h2>
+            <span>All 0 restaurants</span>
+        </div>
+        <div class="sidebarList">
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="orders.html">Orders</a>
+                <a href="menu.html">Menu</a>
+                <a href="discount_codes.html" class="active">Discount codes</a>
+                <a href="Users&roles.html">Users & roles</a>
+                <a href="">Restaurants</a>
+                <a href="">Reviews</a>
+                <a href="">Payouts</a>
+                <a href="">Settings</a>
+
+            </nav>
+        </div>
+
+        <!--PROFILE  -->
+        <div>
+            <div class="user-account">
+                <div class="user">
+                    <div class="user-profile">
+                        <img src="images/khan.jpg" alt="">
+                    </div>
+                    <div style="line-height: 0px;">
+                        <h3>Kharoty</h3>
+                        <h5>Super admin</h5>
+                    </div>
+                </div>
+                <!-- SIGN OUT -->
+                <div>
+                    <button class="sign-out">Sign out</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="navbar">
+            <div class="page-title">
+                <h3>Dashboard</h3>
+                <h4 class="admin">Super admin</h4>
+            </div>
+            <div class="search-bar">
+                <div class="search">
+                    <input type="text" placeholder="search orders or customers">
+                </div>
+                <div class="user-profile">
+                    <img src="images/khan.jpg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main class="content">
+            <div class="discount-page">
+                
+                <!-- Discount Table -->
+            <div class="discount-table-wrapper">
+                <table class="discount-table">
+                    <thead>
+                        <tr>
+                            <th>CODE</th>
+                            <th>OFFER  WHO GETS IT</th>
+                            <th>REDEEMED</th>
+                            <th>ENDS</th>
+                            <th>LIVE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="code-badge">SUFRA20</span>
+                            </td>
+                            <td style="display: flex; gap: 10px; align-items: center;">
+                                <div>
+                                    <strong>20% <br> - </strong><br>
+                                    <strong>max <br> AFN <br> 200</strong><br>
+                                    <span>Percentage</span>
+                                </div>
+                                <span>New customer</span>
+                            </td>
+                            <td>
+                                <strong>200 / 500</strong><br>
+                                <small>4% of cap</small>
+                            </td>
+                            <td>21 Jun 2026</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code-badge">NOFEE</span>
+                            </td>
+                            <td style="display: flex; align-items: center; gap: 10px;">
+                                <div>
+                                    <strong>Waives <br> AFN <br> 60</strong><br>
+                                    <span>Free delivery</span>
+                                </div>
+                                <span>Orders over AFN 400</span>
+                            </td>
+                            <td>
+                                <strong>86 / 200</strong><br>
+                                <span>43% of cap</span>
+                            </td>
+                            <td>30 Feb 2026</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="code-badge">NAAN5</span>
+                            </td>
+                            <td style="display: flex; align-items: center; gap: 10px;">
+                                <div >
+                                    <strong>Buy <br> 2 <br> get 1</strong><br>
+                                    <span>Item offer</span>
+                                </div>
+                                <span>All customers</span>
+                            </td>
+                            <td>
+                                <strong>20 / 200</strong><br>
+                                <span>1% of cap</span>
+                            </td>
+                            <td>Paused</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- New Discount Code -->
+            <div class="create-discount">
+                <h2>New discount code</h2>
+                <div class="field">
+                    <label for="code">CODE</label>
+                    <input type="text" id="code" name="code" placeholder="JUMA15">
+                </div>
+                <div class="field">
+                    <label>TYPE</label>
+                    <div class="discount-type">   
+                        <label>
+                            <input type="radio" name="discount-type" checked>
+                            <span>Percentage</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="discount-type">
+                            <span>Fixed</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="two-fields">
+                    <div class="field">
+                        <label for="value">VALUE</label>
+                        <input type="text" id="value" name="value" placeholder="10%">
+                    </div>  
+                    <div class="field">
+                        <label for="cap">CAP</label>
+                        <input type="text" id="cap" name="cap" placeholder="AFN 200">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="runs-until">RUNS UNTIL</label>
+
+                    <input type="text" id="runs-until" name="runs-until" placeholder="31 Feb 2026">
+                </div>
+                <button class="create-btn">Create code</button>
+            </div>
+        </div>
+    </main>
+    </div>
+</body>
+
+</html>

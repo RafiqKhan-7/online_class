@@ -26,6 +26,7 @@
     --ok:#16A34A;
     --warn:#D97706;
     --danger:#DC2626;
+    --danger-bg:#fee2e2;
     --dark:#111827;
     --redius:12px;
 }
@@ -306,7 +307,7 @@ body {
     justify-content: start;
     letter-spacing: 1px;
     line-height: 10px;
-    font-family: sans-serif;
+    font-family:Nunito;
     align-items: justify;
     padding: 5px 20px;
     box-shadow: 1px 1px 3px var(--border-color);
@@ -438,8 +439,8 @@ body {
 }
 
 .preparing {
-    background: var(--preparing-bg);
-    color:var(--preparing-color)
+    background-color: var(--preparing-bg);
+    color: var(--hieghtest-day);
 }
 
 .new {
@@ -574,4 +575,367 @@ body {
     font-size: medium;
     cursor: pointer;
     font-weight: 500;
+}
+
+.discount-page {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    gap: 16px;
+    align-items: start;
+}
+
+/* TABLE */
+.discount-table-wrapper {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.discount-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.discount-table th,
+.discount-table td {
+    padding: 14px 12px;
+    text-align: left;
+}
+
+.discount-table th {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--white);
+}
+
+.discount-table td {
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+.discount-table td strong {
+    font-size: 12px;
+    color: var(--dark);
+}
+
+.discount-table td span {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+
+/* CODE */
+.code-badge {
+    display: inline-block;
+    padding: 5px 8px;
+    background: var(--bg);
+    color: var(--brand) !important;
+    border-radius: 6px;
+    font-size: 10px !important;
+    font-weight: 700;
+}
+
+/* CREATE DISCOUNT */
+.create-discount {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.create-discount h2 {
+    margin: 0 0 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+
+/* FORM FIELD */
+.field {
+    margin-bottom: 12px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 9px;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+}
+
+.field input {
+    width: 100%;
+    height: 34px;
+    padding: 0 11px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    background: var(--white);
+    outline: none;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.field input:focus {
+    border-color: var(--brand);
+}
+
+
+/*DISCOUNT TYPE */
+.discount-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.discount-type label {
+    margin: 0;
+}
+
+.discount-type input {
+    display: none;
+}
+
+.discount-type span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    background: var(--bg);
+    color: var(--text-gray);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.discount-type input:checked + span {
+    background: var(--hieghtest-day);
+    border-color: var(--hieghtest-day);
+    color: var(--white);
+}
+
+
+/*VALUE & CAP */
+.two-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+
+/*CREATE BUTTON*/
+.create-btn {
+    width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
+    background: var(--hieghtest-day);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background: var(--brand);
+}
+
+/* USERS & ROLES PAGE */
+
+.invitation {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    gap: 30px;
+}
+
+.invitation p {
+    color: var(--text-gray);
+}
+
+.invite-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.invite-btn button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--hieghtest-day);
+    color: var(--brand-soft);
+    font-size: medium;
+}
+
+.users-table-wraper {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.users-table-wraper .users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table-wraper .users-table th{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--bg);
+}
+
+.users-table th, td {
+    padding: 14px 12px ;
+    text-align: left;
+}
+
+.users-table-wraper .users-table img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: auto;
+}
+
+.invited-users {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.invited-users div {
+    line-height: 5px;
+}
+
+.role-btn {
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.user-edit {
+    color: var(--brand);
+}
+
+/* BUTTOM SECTION OF THE USER-INVITATION */
+.bottom-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.panel {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--redius);
+    overflow: hidden;
+}
+
+.panel h3 {
+    margin: 0;
+    padding: 14px;
+    font-size: 13px;
+    color: var(--dark);
+}
+
+.customers-table,
+.permissions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customers-table th,
+.customers-table td,
+.permissions-table th,
+.permissions-table td {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.customers-table th,
+.permissions-table th {
+    background: var(--bg);
+    font-size: 11px;
+    color: var(--text-gray);
+}
+
+.customers-table td,
+.permissions-table td {
+    border-top: 1px solid var(--border-color);
+    font-size: 11px;
+}
+
+
+.customers-table td span {
+    font-size: 9px;
+    color: var(--muted);
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.status.active {
+    background: var(--brand-soft);
+    color: var(--ok);
+}
+
+.status.blocked {
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+.permissions-table th:not(:first-child),
+.permissions-table td:not(:first-child) {
+    text-align: center;
+}
+
+.permission-dot {
+    color: var(--brand);
+    font-size: 16px;
+}
+
+.permission-none {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+
+/* MEDIA QUERY */
+
+/*TABLET */
+@media (max-width: 900px) {
+
+    .discount-page {
+        grid-template-columns: 1fr;
+    }
+
+    .create-discount {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+/* USERS INVITATION */
+@media (max-width: 900px) {
+    .bottom-sections {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users & roles</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebarTitle">
+            <h2>Ghiza Console</h2>
+            <span>All 0 restaurants</span>
+        </div>
+        <div class="sidebarList">
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="orders.html">Orders</a>
+                <a href="menu.html">Menu</a>
+                <a href="discount_codes.html">Discount codes</a>
+                <a href="Users&roles.html" class="active">Users & roles</a>
+                <a href="">Restaurants</a>
+                <a href="">Reviews</a>
+                <a href="">Payouts</a>
+                <a href="">Settings</a>
+            </nav>
+        </div>
+
+        <!--PROFILE  -->
+        <div>
+            <div class="user-account">
+                <div class="user">
+                    <div class="user-profile">
+                        <img src="images/khan.jpg" alt="">
+                    </div>
+                    <div style="line-height: 0px;">
+                        <h3>Kharoty</h3>
+                        <h5>Super admin</h5>
+                    </div>
+                </div>
+                <!-- SIGN OUT -->
+                <div>
+                    <button class="sign-out">Sign out</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="navbar">
+            <div class="page-title">
+                <h3>Dashboard</h3>
+                <h4 class="admin">Super admin</h4>
+            </div>
+            <div class="search-bar">
+                <div class="search">
+                    <input type="text" placeholder="search orders or customers">
+                </div>
+                <div class="user-profile">
+                    <img src="images/khan.jpg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main class="content">
+            <section class="user-page">
+                <div>
+                    <div class="invitation">
+                        <p>Roles are genrated per restaurant. A person can be an owner at one restaurant and a branch
+                            manager at another -- the Console resolves the union at sign-in.</p>
+                        <div class="invite-btn">
+                            <button>+Invite person</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-table-wraper">
+                    <table class="users-table">
+                        <h3 class="staff-accounts">staff accounts</h3>
+                        <thead>
+                            <tr>
+                                <th>PERSON</th>
+                                <th>ROLE</th>
+                                <th>SCOP</th>
+                                <th>LAST ACTIVE</th>
+                                <th>MANAGE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="invited-users">
+                                        <img src="https://img.magnific.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
+                                            alt="">
+                                        <div>
+                                            <h3>Khan</h3>
+                                            <span>khan@ghiza.af</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><button class="role-btn preparing">Restaurant owner</button></td>
+                                <td>All branches</td>
+                                <td>3 hour ago</td>
+                                <td class="user-edit">Edit</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="invited-users">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyoDlhyf_NcAcAeg88fJZeSgnK-Rpk9VmBbVL3BZSwA&s=10"
+                                            alt="">
+                                        <div>
+                                            <h3>Obaid</h3>
+                                            <span>obaid@ghiza.af</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><button class="role-btn pill new">Branch manager</button></td>
+                                <td>Shar-e-Naw branch</td>
+                                <td>1 hour ago</td>
+                                <td class="user-edit">Edit</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!--  -->
+            <div class="bottom-sections">
+                <!-- CUSTOMERS -->
+                <section class="panel customers-panel">
+                    <h3>Customers</h3>
+                    <table class="customers-table">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>ORDERS</th>
+                                <th>SPENT</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Fyzan</strong><br>
+                                    <span>+93 701 234 567</span>
+                                </td>
+                                <td>34</td>
+                                <td>AFN 41,200</td>
+                                <td>
+                                    <span class="status active">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Helal Nasiri</strong><br>
+                                    <span>+93 798 842 210</span>
+                                </td>
+                                <td>12</td>
+                                <td>AFN 16,800</td>
+                                <td>
+                                    <span class="status active">Active</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Hamid Aziz</strong><br>
+                                    <span>+93 777 301 990</span>
+                                </td>
+                                <td>3</td>
+                                <td>AFN 2,940</td>
+                                <td>
+                                    <span class="status active">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Omid Karimi</strong><br>
+                                    <span>+93 702 456 789</span>
+                                </td>
+                                <td>0</td>
+                                <td>AFN 0</td>
+                                <td>
+                                    <span class="status blocked">Blocked</span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+
+                <!-- WHO CAN DO WHAT -->
+                <section class="panel permissions-panel">
+                    <h3>Who can do what</h3>
+                    <table class="permissions-table">
+                        <thead>
+                            <tr>
+                                <th>Capability</th>
+                                <th>Admin</th>
+                                <th>Owner</th>
+                                <th>Branch</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>View orders for own restaurant</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                            </tr>
+                            <tr>
+                                <td>Accept, reject and advance orders</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                            </tr>
+                            <tr>
+                                <td>Open / close the branch</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                            </tr>
+                            <tr>
+                                <td>Edit menu, prices and stock</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-none">—</span></td>
+                            </tr>
+                            <tr>
+                                <td>Create and pause discount codes</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-none">—</span></td>
+                            </tr>
+                            <tr>
+                                <td>Invite staff and assign roles</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-none">—</span></td>
+                            </tr>
+                            <tr>
+                                <td>View revenue reports and payouts</td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-dot">●</span></td>
+                                <td><span class="permission-none">—</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
