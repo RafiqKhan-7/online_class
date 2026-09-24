@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebarTitle">
+            <h2>Ghiza Console</h2>
+            <span>All 0 restaurants</span>
+        </div>
+        <div class="sidebarList">
+
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="orders.html">Orders</a>
+                <a href="menu.html">Menu</a>
+                <a href="discount_codes.html">Discount codes</a>
+                <a href="Users&roles.html" >Users & roles</a>
+                <a href="Restaurants.html" class="active">Restaurants</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="Payouts.html">Payouts</a>
+                <a href="Settings.html">Settings</a>
+            </nav>
+        </div>
+
+        <!--PROFILE  -->
+        <div>
+            <div class="user-account">
+                <div class="user">
+                    <div class="user-profile">
+                        <img src="images/khan.jpg" alt="">
+                    </div>
+                    <div style="line-height: 0px;">
+                        <h3>Kharoty</h3>
+                        <h5>Super admin</h5>
+                    </div>
+                </div>
+                <!-- SIGN OUT -->
+                <div>
+                    <button class="sign-out">Sign out</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="main">
+        <header class="navbar">
+            <div class="page-title">
+                <h3>Restaurants</h3>
+                <h4 class="admin">Super admin</h4>
+            </div>
+            <div class="search-bar">
+                <div class="search">
+                    <input type="text" placeholder="search orders or customers">
+                </div>
+                <div class="user-profile">
+                    <img src="images/khan.jpg" alt="">
+                </div>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="restaurant-table-wraper">
+                    <table class="restaurant-table">
+                        <thead>
+                            <tr>
+                                <th>RESTAURANT</th>
+                                <th>OWNER</th>
+                                <th>ORDERS</th>
+                                <th>STATUS</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="restaurant-info">
+                                        <div class="restaurant-logo"></div>
+                                        <div>
+                                            <h4>Ghiza Kabab House</h4>
+                                            <span>Kabul Shar-e-Naw</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Ali Khan</td>
+                                <td>—</td>
+                                <td><span class="pill new">Pending</span></td>
+                                <td>
+                                    <button>Request docs</button>
+                                    <button>Approve</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="restaurant-info">
+                                        <div class="restaurant-logo"></div>
+                                    <div>
+                                            <h4>Jalalabad Chopan Kabab</h4>
+                                            <span>Jalalabad Chowk-e-Talashi</span>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td>Usama Afghan</td>
+                                <td>121</td>
+                                <td><span class="pill ready">Live</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="restaurant-info">
+                                        <div class="restaurant-logo"></div>
+                                    <div>
+                                            <h4>Baryani </h4>
+                                            <span>Jalalabad Spena Mani</span>
+                                    </div>
+                                    </div>
+                                </td>
+                                <td>Ahmad Bilal</td>
+                                <td>11</td>
+                                <td><span class="suspended">Suspended</span></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </main>
+    </div>
+</body>
+</html>

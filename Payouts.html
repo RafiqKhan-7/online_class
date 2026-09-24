@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Payouts</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,17 +16,17 @@
             <span>All 0 restaurants</span>
         </div>
         <div class="sidebarList">
+
             <nav>
                 <a href="dashboard.html">Dashboard</a>
-                <a href="orders.html" >Orders</a>
-                <a href="menu.html" class="active">Menu</a>
+                <a href="orders.html">Orders</a>
+                <a href="menu.html">Menu</a>
                 <a href="discount_codes.html">Discount codes</a>
                 <a href="Users&roles.html">Users & roles</a>
                 <a href="Restaurants.html">Restaurants</a>
-                <a href="Reviews.html">Reviews</a>
-                <a href="Payouts.html">Payouts</a>
+                <a href="Reviews.html" >Reviews</a>
+                <a href="Payouts.html" class="active">Payouts</a>
                 <a href="Settings.html">Settings</a>
-
             </nav>
         </div>
 
@@ -56,7 +53,7 @@
     <div class="main">
         <header class="navbar">
             <div class="page-title">
-                <h3>Menu</h3>
+                <h3>Payouts</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
@@ -68,49 +65,57 @@
                 </div>
             </div>
         </header>
+
         <main class="content">
-            <div class="add-items">
-                <p>Changes go live in the customer app immediately.</p>
-                <button class="add-items-btn">+Add item</button>
-            </div>
-            <section class="">
-                <table class="data-table menu">
-                    <thead>
+            <div class="payouts-page">
+                <div class="statement-card">
+                    <div>
+                        <span>NEXT PAYOUT • MONDAY</span>
+                        <h2>AFN 208,245</h2>
+                        <span>AziziBank.***4980 • 90% platform fee applied</span>
+                    </div>
+                    <div class="download-statement">
+                        <button>Download statement</button>
+                    </div>
+                </div>
+                <div class="pay-table-wraper">
+                    <table class="">
+                        <thead>
                         <tr>
-                            <th>SECTION</th>
-                            <th>ITEM</th>
-                            <th>PRICE</th>
+                            <th>PERIOD</th>
+                            <th>GROSS</th>
+                            <th>PLATFORM FEE</th>
+                            <th>NET</th>
                             <th>STATUS</th>
-                            <th>IN STOCK</th>
                         </tr>
                     </thead>
+                    
                     <tbody>
                         <tr>
-                            <td>Popular</td>
-                            <td>Chapli Kabab<br> <span>Flat minced-beef kabab, green chilli, tomato, served with naan</span> </td>
-                            <td>AFN 300</td>
-                            <td>Available</td>
+                            <td>1 - 20 Feb 2026</td>
+                            <td>AFN 500</td>
+                            <td>- AFN 180</td>
+                            <td>AFN 320</td>
                             <td>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider"></span>
-                                </label>
+                                <span class="pill ready pay-status">Paid</span>
                             </td>
                         </tr>
-                         <tr>
-                            <td>Popular</td>
-                            <td>Kabuli Pulao<br><span>Afghan rice with tender beef, carrots, raisins, and almonds</span></td>
-                            <td>AFN 450</td>
-                            <td>Available</td>
+                        <tr>
+                            <td>5 - 17 Jul 2026</td>
+                            <td>AFN 360</td>
+                            <td>- AFN 150</td>
+                            <td>AFN 210</td>
                             <td>
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider"></span>
-                                </label>
+                                <span class="pill new pay-status">Scheduled</span>
                             </td>
                         </tr>
+                        
                     </tbody>
-            </section>
+                </table>
+                </div>
+            </div>
+            
+
         </main>
     </div>
 </body>
