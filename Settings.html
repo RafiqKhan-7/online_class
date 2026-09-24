@@ -22,11 +22,11 @@
                 <a href="orders.html">Orders</a>
                 <a href="menu.html">Menu</a>
                 <a href="discount_codes.html">Discount codes</a>
-                <a href="Users&roles.html" class="active">Users & roles</a>
+                <a href="Users&roles.html" >Users & roles</a>
                 <a href="Restaurants.html">Restaurants</a>
                 <a href="Reviews.html">Reviews</a>
                 <a href="Payouts.html">Payouts</a>
-                <a href="Settings.html">Settings</a>
+                <a href="Settings.html" class="active">Settings</a>
             </nav>
         </div>
 
@@ -65,5 +65,122 @@
                 </div>
             </div>
         </header>
+
+        <!-- CONTENT -->
+        <main class="settings-content">
+            <div class="settings-grid">
+
+                <!-- Restaurant Profile -->
+                <section class="panel restaurant-profile">
+                    <h3>Restaurant profile</h3>
+
+                    <div class="cover-photo">
+                        <button>Replace cover photo</button>
+                    </div>
+                    <div class="field">
+                        <label>NAME</label>
+                        <input type="text" value="Sufra Kabab House">
+                    </div>
+                    <div class="field">
+                        <label>ADDRESS</label>
+                        <input type="text" value="Street 15, Shar-e-Naw, Kabul">
+                    </div>
+                    <div class="field-row">
+                        <div class="field">
+                            <label>PREP TIME</label>
+                            <input type="text" value="25 - 35 min">
+                        </div>
+                        <div class="field">
+                            <label>MINIMUM ORDER</label>
+                            <input type="text" value="AFN 200">
+                        </div>
+                    </div>
+                    <button class="save-btn">Save changes</button>
+                </section>
+
+                <!-- Opening Hours -->
+                <section class="panel opening-hours">
+                    <h3>Opening hours</h3>
+
+                    <div class="day">
+                        <span>Monday</span>
+                        <div class="day-right">
+                            <span>11:00 - 23:00</span>
+
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="day">
+                        <span>Tuesday</span>
+                        <div class="day-right">
+                            <span>11:00 - 23:00</span>
+
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="day">
+                        <span>Wednesday</span>
+                        <div class="day-right">
+                            <span>11:00 - 23:00</span>
+
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <span>Thursday</span>
+                        <div class="day-right">
+                            <span>11:00 - 00:30</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <span>Friday</span>
+                        <div class="day-right">
+                            <span>13:00 - 00:30</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <span>Saturday</span>
+                        <div class="day-right">
+                            <span>11:00 - 23:00</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <span>Sunday</span>
+                        <div class="day-right">
+                            <span>Closed</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>
