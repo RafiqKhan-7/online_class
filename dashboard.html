@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <aside class="sidebar">
         <div class="sidebarTitle">
@@ -32,86 +32,122 @@
             </nav>
         </div>
 
-        <div>
-            <!--PROFILE  -->
-            <div class="user-account">
-                <div class="user">
-                    <div class="user-profile">
-                        <img src="images/khan.jpg" alt="">
-                    </div>
-                    <div style="line-height: 0px;">
-                        <h3>Kharoty</h3>
-                        <h5>Super admin</h5>
-                    </div>
+        <!-- PROFILE -->
+        <div class="user-account">
+            <div class="user">
+                <div class="user-profile">
+                    <img src="images/khan.jpg" alt="Profile">
                 </div>
-                    <!-- SIGN OUT -->
-                    <div>
-                        <button class="sign-out">Sign out</button>
-                    </div>
+                <div class="user-info">
+                    <h3>Kharoty</h3>
+                    <h5>Super admin</h5>
+                </div>
+            </div>
+
+            <!-- SIGN OUT -->
+            <div>
+                <button class="sign-out">Sign out</button>
             </div>
         </div>
     </aside>
 
+    <!-- MAIN -->
     <div class="main">
+
+        <!-- NAVBAR -->
         <header class="navbar">
             <div class="page-title">
+                <span>All 0 restaurants</span>
                 <h3>Dashboard</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
+                <h5>Super admin</h5>
                 <div class="search">
-                    <input type="text" placeholder="search orders or customers">
+                    <input type="text" placeholder="Search orders or customers">
                 </div>
                 <div class="user-profile">
-                    <img src="images/khan.jpg" alt="">
+                    <img src="images/khan.jpg" alt="Profile">
                 </div>
             </div>
         </header>
 
-        <!-- Orders content -->
+        <!-- PAGE CONTENT -->
         <main class="content">
+
+            <!-- STAT CARDS -->
             <section class="cards">
+
                 <!-- CARD ONE -->
                 <div class="card">
-                    <h4 class="">Orders today</h4>
-                    <h2 class="">2,000</h2>
+                    <h4>Orders today</h4>
+                    <h2>2,000</h2>
                     <h4 class="decrease">-2% vs yesterday</h4>
                 </div>
+
                 <!-- CARD TWO -->
                 <div class="card">
-                    <h4 class="">GMS this week</h4>
-                    <h2 class=""> AFG 2,050900</h2>
+                    <h4>GMS this week</h4>
+                    <h2>AFG 2,050,900</h2>
                     <h4 class="decrease">-7%</h4>
                 </div>
+
                 <!-- CARD THREE -->
                 <div class="card">
-                    <h4 class="">Live restaurants</h4>
-                    <h2 class="">200</h2>
-                    <h4 class="live-rest"> 4 awaiting approval</h4>
+                    <h4>Live restaurants</h4>
+                    <h2>200</h2>
+                    <h4 class="live-rest">4 awaiting approval</h4>
                 </div>
+
+                <!-- CARD FOUR -->
                 <div class="card">
-                    <h4 class="">Registered customers</h4>
-                    <h2 class="">22100</h2>
+                    <h4>Registered customers</h4>
+                    <h2>22,100</h2>
                     <h4 class="increase">+211 this week</h4>
                 </div>
             </section>
 
             <!-- ORDERS PER DAY -->
             <section class="daily-orders">
+                <!-- CHART -->
                 <div class="days">
-                    <div class="Mon day"></div>
-                    <div class="Tue day"></div>
-                    <div class="Wed day"></div>
-                    <div class="Thu day"></div>
-                    <div class="Fri day"></div>
-                    <div class="Sat heightest"></div>
-                    <div class="Sun day"></div>
+                    <div class="chart-column day Mon">
+                        <div class=""></div>
+                        <span>Mon</span>
+                    </div>
+                    <div class="chart-column day Tue">
+                        <div class=""></div>
+                        <span>Tue</span>
+                    </div>
+                    <div class="chart-column day Wed">
+                        <div class=""></div>
+                        <span>Wed</span>
+                    </div>
+                    <div class="chart-column day Thu">
+                        <div class=""></div>
+                        <span>Thu</span>
+                    </div>
+                    <div class="chart-column day Fri">
+                        <div class=""></div>
+                        <span>Fri</span>
+                    </div>
+                    <div class="chart-column heightest Sat">
+                        <div class=" "></div>
+                        <span>Sat</span>
+                    </div>
+                    <div class="chart-column day Sun">
+                        <div class=""></div>
+                        <span>Sun</span>
+                    </div>
                 </div>
+
+                <!-- AVAILABILITY -->
                 <section class="available-orders">
                     <h3>Availability</h3>
+
                     <div class="checkbox">
                         <div>
-                            <h3>Pause new orders </h3>
+                            <h3>Pause new orders</h3>
                             <span>Accepting new orders</span>
                         </div>
                         <label class="switch">
@@ -120,97 +156,115 @@
                         </label>
                     </div>
                     <div class="avail-parag">
-                        <p>Tody's hours are <strong> 11:00 - 23:00 </strong> Pausing hides the kitchen in the app
-                            immediately and any order in the queue is unaffected </p>
+                        <p>Today's hours are<strong>11:00 - 23:00</strong>Pausing hides the kitchen in the app immediately and any order in the queue is unaffected.
+                        </p>
                     </div>
                 </section>
             </section>
+
             <!-- REVIEW QUEUE -->
             <section class="review-queue">
                 <div>
-                    <h4> 2 restaurants are awaiting for approval</h4>
-                    <p>Document submitted-verify the licence and bank detials before going live</p>
+                    <h3>2 restaurants are awaiting approval</h3>
+                    <p>Document submitted - verify the licence and bank details before going live.</p>
                 </div>
                 <div class="review-btn">
-                    <button>Review Queue</button>
+                    <button>Review</button>
                 </div>
             </section>
 
             <!-- RECENT ORDERS -->
             <section class="recent-orders">
                 <h4>Recent orders</h4>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>ORDER</th>
-                            <th>CUSTOMER</th>
-                            <th>MODE</th>
-                            <th>PLACED</th>
-                            <th>TOTAL</th>
-                            <th>STATUS</th>
-                        </tr>
-                    </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>#SF-5455</td>
-                            <td>Zahid khan</td>
-                            <td>Delivery</td>
-                            <td>10.3</td>
-                            <td>AFG 250</td>
-                            <td>
-                                <span class="pill preparing">Preparing</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#SF-5499</td>
-                            <td>Rafiq Khan</td>
-                            <td>Pickup</td>
-                            <td>25.2</td>
-                            <td>AFG 180</td>
-                            <td>
-                                <span class="pill new">new</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#SF-5498</td>
-                            <td>Mohammad Yaseen</td>
-                            <td>Delivery</td>
-                            <td>15.22</td>
-                            <td>AFG 200</td>
-                            <td>
-                                <span class="pill ready">Ready</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#SF-5491</td>
-                            <td>Abdul Qadir</td>
-                            <td>Delivery</td>
-                            <td>15.22</td>
-                            <td>AFG 200</td>
-                            <td>
-                                <span class="pill new">new</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#SF-5490</td>
-                            <td>Ataullah</td>
-                            <td>Delivery</td>
-                            <td>15.22</td>
-                            <td>AFG 200</td>
-                            <td>
-                                <span class="pill preparing">Preparing</span>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ORDER</th>
+                                <th>CUSTOMER</th>
+                                <th>MODE</th>
+                                <th>PLACED</th>
+                                <th>TOTAL</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#SF-5455</td>
+                                <td>Zahid Khan</td>
+                                <td>Delivery</td>
+                                <td>10:30</td>
+                                <td>AFG 250</td>
+                                <td>
+                                    <span class="pill preparing">Preparing</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#SF-5499</td>
+                                <td>Rafiq Khan</td>
+                                <td>Pickup</td>
+                                <td>12:25</td>
+                                <td>AFG 180</td>
+                                <td>
+                                    <span class="pill new">New</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#SF-5498</td>
+                                <td>Mohammad Yaseen</td>
+                                <td>Delivery</td>
+                                <td>15:22</td>
+                                <td>AFG 200</td>
+                                <td>
+                                    <span class="pill ready">Ready</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#SF-5491</td>
+                                <td>Abdul Qadir</td>
+                                <td>Delivery</td>
+                                <td>15:22</td>
+                                <td>AFG 200</td>
+                                <td>
+                                    <span class="pill new">New</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#SF-5490</td>
+                                <td>Ataullah</td>
+                                <td>Delivery</td>
+                                <td>15:22</td>
+                                <td>AFG 200</td>
+                                <td>
+                                    <span class="pill preparing">Preparing</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </main>
-</body>
+    </div>
 
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item active">
+            <span class="mobile-icon">⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
+</body>
 </html>
