@@ -24,6 +24,7 @@
     --muted: #6B7280;
     --line: #E5E7EB;
     --ok: #16A34A;
+    --ok-bg:#c7fbda;
     --warn: #D97706;
     --danger: #DC2626;
     --danger-bg: #fee2e2;
@@ -31,6 +32,27 @@
     --redius: 12px;
 }
 
+
+.Accepted-order {
+    display: none;
+    background: #e8f8ee;
+    color: #16753a;
+    border: 1px solid #a9dfbd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Accepted-order.show {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0);
+}
 
 * {
     box-sizing: border-box;
@@ -623,11 +645,14 @@ body {
 }
 
 .orders-status {
-    width: 65%;
+    width: 68%;
     background-color: var(--white);
     padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
 }
+
+
 
 .status-title {
     max-width: 60%;
