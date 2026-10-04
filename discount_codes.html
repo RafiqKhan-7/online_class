@@ -71,18 +71,18 @@
                 </div>
             </div>
         </header>
-             <!-- TABLET TOP NAVIGATION -->
-    <nav class="tablet-nav">
-        <a href="dashboard.html">Dashboard</a>
-        <a href="orders.html">Orders</a>
-        <a href="menu.html">Menu</a>
-        <a href="discount_codes.html" class="active">Discount codes</a>
-        <a href="Users&roles.html" >Users & roles</a>
-        <a href="Restaurants.html">Restaurants</a>
-        <a href="Reviews.html">Reviews</a>
-        <a href="Payouts.html">Payouts</a>
-        <a href="Settings.html">Settings</a>
-    </nav>
+        <!-- TABLET TOP NAVIGATION -->
+        <nav class="tablet-nav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="orders.html">Orders</a>
+            <a href="menu.html">Menu</a>
+            <a href="discount_codes.html" class="active">Discount codes</a>
+            <a href="Users&roles.html">Users & roles</a>
+            <a href="Restaurants.html">Restaurants</a>
+            <a href="Reviews.html">Reviews</a>
+            <a href="Payouts.html">Payouts</a>
+            <a href="Settings.html">Settings</a>
+        </nav>
 
         <!-- CONTENT -->
         <main class="content">
@@ -100,32 +100,32 @@
                                 <th>LIVE</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="" id="discount-list">
+                            <!-- <tr class="discount-arr">
                                 <td>
                                     <span class="code-badge">SUFRA20</span>
                                 </td>
-                                <td style="display: flex; gap: 10px; align-items: center;">
+                                <td class="offer" style="display: flex; gap: 10px; align-items: center;">
                                     <div>
                                         <strong>20% <br> - </strong><br>
-                                        <strong>max <br> AFN <br> 200</strong><br>
-                                        <span>Percentage</span>
+                                        <strong class="get-offer">max <br> AFN <br> 200</strong><br>
+                                        <span class="percentage">Percentage</span>
                                     </div>
-                                    <span>New customer</span>
+                                    <span class="new-customer">New customer</span>
                                 </td>
                                 <td>
-                                    <strong>200 / 500</strong><br>
-                                    <small>4% of cap</small>
+                                    <strong class="redeemed">200 / 500</strong><br>
+                                    <small class="cap">4% of cap</small>
                                 </td>
-                                <td>21 Jun 2026</td>
+                                <td class="ends">21 Jun 2026</td>
                                 <td>
                                     <label class="switch">
                                         <input type="checkbox" checked>
                                         <span class="slider"></span>
                                     </label>
                                 </td>
-                            </tr>
-                            <tr>
+                            </tr> -->
+                            <!-- <tr>
                                 <td>
                                     <span class="code-badge">NOFEE</span>
                                 </td>
@@ -170,7 +170,7 @@
                                         <span class="slider"></span>
                                     </label>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -180,17 +180,17 @@
                     <h2>New discount code</h2>
                     <div class="field">
                         <label for="code">CODE</label>
-                        <input type="text" id="code" name="code" placeholder="JUMA15">
+                        <input type="text" id="code" name="code" placeholder="JUMA15" maxlength="8">
                     </div>
                     <div class="field">
                         <label>TYPE</label>
                         <div class="discount-type">
                             <label>
-                                <input type="radio" name="discount-type" checked>
+                                <input type="radio" name="discount-type" value="Percentage" checked>
                                 <span>Percentage</span>
                             </label>
                             <label>
-                                <input type="radio" name="discount-type">
+                                <input type="radio" name="discount-type" value="Fixed">
                                 <span>Fixed</span>
                             </label>
                         </div>
@@ -207,8 +207,7 @@
                     </div>
                     <div class="field">
                         <label for="runs-until">RUNS UNTIL</label>
-
-                        <input type="text" id="runs-until" name="runs-until" placeholder="31 Feb 2026">
+                        <input type="date" id="runs-until" name="runs-until" placeholder="31 Feb 2026">
                     </div>
                     <button class="create-btn">Create code</button>
                 </div>

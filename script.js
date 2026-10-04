@@ -59,5 +59,75 @@ accept_btn.addEventListener("click", function(e)
 
 }
 
+const createButton = document.querySelector(".create-btn");
+const discountList = document.querySelector("#discount-list");
 
+if (createButton && discountList) {
 
+    let discounts = JSON.parse(localStorage.getItem("discounts")) || [];
+    function displayDiscounts() {
+        discountList.innerHTML = "";
+        discounts.forEach(function(discount) {
+            const row = document.createElement("tr");
+            row.classList.add("discount-arr");
+            row.innerHTML = `
+                <td>
+                    <span class="code-badge">${discount.code}</span>
+                </td>
+                <td class="offer"style="display: flex; gap: 10px; align-items: center;">
+                    <div>
+                        <strong>${discount.value}<br> -</strong><br>
+                        <strong class="get-offer">max<br>${discount.cap}</strong><br>
+                    </div>
+                    <span class="new-customer">New customer</span>
+                </td>
+                <td>
+                    <strong class="redeemed">0 / 500</strong><br>
+                    <small class="cap">0% of cap</small>
+                </td>
+                <td class="ends">${discount.runsUntil}</td>
+                <td>
+                    <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </td>
+            `;
+            discountList.appendChild(row);
+        });
+    }
+
+    let code = document.querySelector("#code");
+        code.addEventListener("input", function(e){
+            e.preventDefault();
+            code.value = code.value.toUpperCase();
+        })
+    // Create a new discount
+    createButton.addEventListener("click", function() {
+
+        const code = document.querySelector("#code").value.trim();
+        const value = document.querySelector("#value").value.trim();
+        const cap = document.querySelector("#cap").value.trim();
+        const runsUntil = document.querySelector("#runs-until").value.trim();
+
+        if (!code || !value || !cap || !runsUntil) {
+            alert("Please fill all fields.");
+            return;
+        }
+        // Create new discount
+        const discount = {
+            code: code,
+            value: value,
+            cap: cap,
+            runsUntil: runsUntil
+        };
+        discounts.push(discount);
+        localStorage.setItem("discounts",JSON.stringify(discounts));
+
+        displayDiscounts();
+
+        document.querySelector("#code").value = "";
+        document.querySelector("#value").value = "";
+        document.querySelector("#cap").value = "";
+        document.querySelector("#runs-until").value = "";
+    });
+
+    displayDiscounts();
+}
