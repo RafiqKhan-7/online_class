@@ -22,10 +22,10 @@
                 <a href="orders.html">Orders</a>
                 <a href="menu.html">Menu</a>
                 <a href="discount_codes.html">Discount codes</a>
-                <a href="Users&roles.html" >Users & roles</a>
+                <a href="Users&roles.html">Users & roles</a>
                 <a href="Restaurants.html">Restaurants</a>
-                <a href="Reviews.html" class="active" >Reviews</a>
-                <a href="Payouts.html" >Payouts</a>
+                <a href="Reviews.html" class="active">Reviews</a>
+                <a href="Payouts.html">Payouts</a>
                 <a href="Settings.html">Settings</a>
             </nav>
         </div>
@@ -44,7 +44,7 @@
                 </div>
                 <!-- SIGN OUT -->
                 <div>
-                    <button class="sign-out">Sign out</button>
+                    <a href="#" class="sign-out">Sign out</a>
                 </div>
             </div>
         </div>
@@ -53,10 +53,12 @@
     <div class="main">
         <header class="navbar">
             <div class="page-title">
+                <span>All 0 restaurants</span>
                 <h3>Reviews</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
+                <h5>Super admin</h5>
                 <div class="search">
                     <input type="text" placeholder="search orders or customers">
                 </div>
@@ -65,6 +67,19 @@
                 </div>
             </div>
         </header>
+
+           <!-- TABLET TOP NAVIGATION -->
+    <nav class="tablet-nav">
+        <a href="dashboard.html" >Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="menu.html">Menu</a>
+        <a href="discount_codes.html" >Discount codes</a>
+        <a href="Users&roles.html">Users & roles</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="Reviews.html" class="active">Reviews</a>
+        <a href="Payouts.html">Payouts</a>
+        <a href="Settings.html">Settings</a>
+    </nav>
 
         <main class="content">
             <div class="review-page">
@@ -76,59 +91,138 @@
                 </div>
                 <!-- ALL REPLIES -->
                 <div class="reply-cards">
+                    <div class="reply-card">
+                        <div class="reply-part">
+                            <div class="" style="display: flex; align-items: center; gap: 5px;">
+                                <h4>Rahmanullah Sh.</h4>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>#SF-2933</span>
+                            </div>
+                            <p>Chapli Kabab was still hot and naan was fresh. Courier called before arriving.</p>
+                            <button class="pill replied">Replied</button>
+                        </div>
+                        <span style="font-size: 13px; color: var(--text-gray);">Yesterday</span>
+                    </div>
 
                     <div class="reply-card">
                         <div class="reply-part">
-                        <div class="" style="display: flex; align-items: center; gap: 5px;">
-                            <h4>Rahmanullah Sh.</h4>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>#SF-2933</span>
+                            <div class="" style="display: flex; align-items: center; gap: 5px;">
+                                <h4>Ahmad A.</h4>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>#SF-1031</span>
+                            </div>
+                            <p>Palaw was excellent but the order took 1 hour instead of 40 minutes.</p>
+                            <button class="pill preparing reply">Replied</button>
                         </div>
-                        <p>Chapli Kabab was still hot and naan was fresh. Courier called before arriving.</p>
-                        <button class="pill replied">Replied</button>
+                        <span style="font-size: 13px; color: var(--text-gray);">1 Jun</span>
                     </div>
-                    <span style="font-size: 13px; color: var(--text-gray);">Yesterday</span>
-                </div>
-                
-                <div class="reply-card">
-                    <div class="reply-part">
-                        <div class="" style="display: flex; align-items: center; gap: 5px;">
-                            <h4>Ahmad A.</h4>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>#SF-1031</span>
+                    <div class="reply-card">
+                        <div class="reply-part">
+                            <div class="" style="display: flex; align-items: center; gap: 5px;">
+                                <h4>Salman h.</h4>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>#SF-5137</span>
+                            </div>
+                            <p>Kufta was missing from the bag.</p>
+                            <button class="pill preparing reply">Reply</button>
                         </div>
-                        <p>Palaw was excellent but the order took 1 hour instead of 40 minutes.</p>
-                        <button class="pill preparing reply">Replied</button>
+                        <span style="font-size: 13px; color: var(--text-gray);">Today</span>
                     </div>
-                    <span style="font-size: 13px; color: var(--text-gray);">1 Jun</span>
-                </div>
-                <div class="reply-card">
-                    <div class="reply-part">
-                        <div class="" style="display: flex; align-items: center; gap: 5px;">
-                            <h4>Salman h.</h4>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>⭐</span>
-                            <span>#SF-5137</span>
-                        </div>
-                        <p>Kufta was missing from the bag.</p>
-                        <button class="pill preparing reply">Reply</button>
-                    </div>
-                    <span style="font-size: 13px; color: var(--text-gray);">Today</span>
                 </div>
             </div>
+            <!-- MOBILE PAGE -->
+            <div class="mobile-review-page">
+                <!-- ALL REVIEWS  -->
+                <div class="mobile-all-reviews">
+                    <h2>5.3</h2>
+                    <p><span>1,805 reviews •</span> two waiting for a reply.</p>
+                </div>
+                <!-- ALL REPLIES -->
+                <div class="reply-cards">
+
+                    <div class="reply-card">
+                        <div class="reply-part">
+                            <div class="" style="display: flex; align-items: center; gap: 5px;">
+                                <h4>Shahid Sh.</h4>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                            </div>
+                            <p>Chapli Kabab was still hot and naan was fresh. Courier called before arriving.</p>
+                            <button class="pill replied">Replied</button>
+                        </div>
+                        <span style="font-size: 13px; color: var(--text-gray);">Yesterday</span>
+                    </div>
+
+                    <div class="reply-card">
+                        <div class="reply-part">
+                            <div class="" style="display: flex; align-items: center; gap: 5px;">
+                                <h4>Ahmad A.</h4>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                            </div>
+                            <p>Palaw was excellent but the order took 1 hour instead of 40 minutes.</p>
+                            <button class="pill preparing reply">Replied</button>
+                        </div>
+                        <span style="font-size: 13px; color: var(--text-gray);">1 Jun</span>
+                    </div>
+                    <div class="reply-card">
+                        <div class="reply-part">
+                            <div class="" style="display: flex; align-items: center; gap: 5px;">
+                                <h4>Salman h.</h4>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                                <span>⭐</span>
+                            </div>
+                            <p>Kufta was missing from the bag.</p>
+                            <button class="pill preparing reply">Reply</button>
+                        </div>
+                        <span style="font-size: 13px; color: var(--text-gray);">Today</span>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
+
+          <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item active">
+            <span class="mobile-icon">⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
+    <script src="script.js"></script>
 </body>
+
 </html>

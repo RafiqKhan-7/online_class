@@ -44,7 +44,7 @@
                 </div>
                 <!-- SIGN OUT -->
                 <div>
-                    <button class="sign-out">Sign out</button>
+                    <a href="#" class="sign-out">Sign out</a>
                 </div>
             </div>
         </div>
@@ -53,10 +53,12 @@
     <div class="main">
         <header class="navbar">
             <div class="page-title">
+                <span>All 0 restaurants</span>
                 <h3>Restaurants</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
+                <h5>Super admin</h5>
                 <div class="search">
                     <input type="text" placeholder="search orders or customers">
                 </div>
@@ -65,6 +67,18 @@
                 </div>
             </div>
         </header>
+             <!-- TABLET TOP NAVIGATION -->
+    <nav class="tablet-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="menu.html">Menu</a>
+        <a href="discount_codes.html">Discount codes</a>
+        <a href="Users&roles.html" >Users & roles</a>
+        <a href="Restaurants.html" class="active">Restaurants</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Payouts.html">Payouts</a>
+        <a href="Settings.html">Settings</a>
+    </nav>
 
         <main class="content">
             <div class="restaurant-table-wraper">
@@ -132,5 +146,26 @@
                 </div>
         </main>
     </div>
+
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item">
+            <span class="mobile-icon">⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item active">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -44,7 +44,7 @@
                 </div>
                 <!-- SIGN OUT -->
                 <div>
-                    <button class="sign-out">Sign out</button>
+                    <a href="#" class="sign-out">Sign out</a>
                 </div>
             </div>
         </div>
@@ -53,10 +53,12 @@
     <div class="main">
         <header class="navbar">
             <div class="page-title">
+                <span>All 0 restaurants</span>
                 <h3>Users & roles</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
+                <h5>Super admin</h5>
                 <div class="search">
                     <input type="text" placeholder="search orders or customers">
                 </div>
@@ -66,66 +68,84 @@
             </div>
         </header>
 
+           <!-- TABLET TOP NAVIGATION -->
+    <nav class="tablet-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="menu.html">Menu</a>
+        <a href="discount_codes.html">Discount codes</a>
+        <a href="Users&roles.html" class="active">Users & roles</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Payouts.html">Payouts</a>
+        <a href="Settings.html">Settings</a>
+    </nav>
+
         <!-- CONTENT -->
         <main class="content">
             <section class="user-page">
-                <div>
-                    <div class="invitation">
-                        <p>Roles are genrated per restaurant. A person can be an owner at one restaurant and a branch
-                            manager at another -- the Console resolves the union at sign-in.</p>
-                        <div class="invite-btn">
-                            <button>+Invite person</button>
+                <div class="mobile-user-page">
+                    <div>
+                        <div class="invitation">
+                            <p>Roles are genrated per restaurant. A person can be an owner at one restaurant and a
+                                branch
+                                manager at another -- the Console resolves the union at sign-in.</p>
+                            <div class="invite-btn">
+                                <button>+Invite person</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="users-table-wraper">
-                    <table class="users-table">
-                        <h3 class="staff-accounts">staff accounts</h3>
-                        <thead>
-                            <tr>
-                                <th>PERSON</th>
-                                <th>ROLE</th>
-                                <th>SCOP</th>
-                                <th>LAST ACTIVE</th>
-                                <th>MANAGE</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="invited-users">
-                                        <img src="https://img.magnific.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
-                                            alt="">
-                                        <div>
-                                            <h3>Khan</h3>
-                                            <span>khan@ghiza.af</span>
+                    <div class="users-table-wraper">
+                        <table class="users-table">
+                            <h3 class="staff-accounts">staff accounts</h3>
+                            <thead>
+                                <tr>
+                                    <th>PERSON</th>
+                                    <th>ROLE</th>
+                                    <th>SCOP</th>
+                                    <th>LAST ACTIVE</th>
+                                    <th>MANAGE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="invited-users">
+                                            <img src="https://img.magnific.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
+                                                alt="">
+                                            <div>
+                                                <h3>Khan</h3>
+                                                <span>khan@ghiza.af</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td><button class="role-btn preparing">Restaurant owner</button></td>
-                                <td>All branches</td>
-                                <td>3 hour ago</td>
-                                <td class="user-edit">Edit</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="invited-users">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyoDlhyf_NcAcAeg88fJZeSgnK-Rpk9VmBbVL3BZSwA&s=10"
-                                            alt="">
-                                        <div>
-                                            <h3>Obaid</h3>
-                                            <span>obaid@ghiza.af</span>
+                                    </td>
+                                    <td><button class="role-btn preparing">Restaurant owner</button></td>
+                                    <td>All branches</td>
+                                    <td>3 hour ago</td>
+                                    <td class="user-edit">Edit</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="invited-users">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyoDlhyf_NcAcAeg88fJZeSgnK-Rpk9VmBbVL3BZSwA&s=10"
+                                                alt="">
+                                            <div>
+                                                <h3>Obaid</h3>
+                                                <span>obaid@ghiza.af</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td><button class="role-btn pill new">Branch manager</button></td>
-                                <td>Shar-e-Naw branch</td>
-                                <td>1 hour ago</td>
-                                <td class="user-edit">Edit</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                    </td>
+                                    <td><button class="role-btn pill new">Branch manager</button></td>
+                                    <td>Shar-e-Naw branch</td>
+                                    <td>1 hour ago</td>
+                                    <td class="user-edit">Edit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
+
             </section>
 
             <!--  -->
@@ -250,8 +270,110 @@
                     </table>
                 </section>
             </div>
+
+            <!-- MOBILE PAGE  -->
+            <section>
+                <div class="mobile-users-table-wraper">
+                    <div>
+                        <div class="invitation">
+                            <span>STAFF</span>
+                            <button>+Invite</button>
+                        </div>
+                    </div>
+                    <table class="mobile-users-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="invited-users">
+                                        <img src="https://img.magnific.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80"
+                                            alt="">
+                                        <div>
+                                            <h5>Khan</h5>
+                                            <span>All branches Online now</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><button class="role-btn preparing">Restaurant owner</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="invited-users">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpyoDlhyf_NcAcAeg88fJZeSgnK-Rpk9VmBbVL3BZSwA&s=10"
+                                            alt="">
+                                        <div>
+                                            <h5>Obaid</h5>
+                                            <span>Shar-e-Naw branch 30 minutes ago</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><button class="role-btn pill new">Branch manager</button></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- CUStOMER -->
+            <section class="mobile-customers-panel">
+                <h3 class="customers-title">Customers</h3>
+                    <table class="mobile-customers-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <strong>Fyzan</strong><br>
+                                        <span>34 Orders • AFN 41,200</span>
+                                    </div>
+                                    <span class="status active">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <strong>Ahmad</strong><br>
+                                        <span>22 Orders • AFN 19,200</span>
+                                    </div>
+                                    <span class="status active">Active</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <strong>Shahid</strong><br>
+                                        <span>0 Orders • AFN 0</span>
+                                    </div>
+                                    <span class="status blocked">Blocked</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
         </main>
+
     </div>
+
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item ">
+            <span class="mobile-icon">⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item active">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

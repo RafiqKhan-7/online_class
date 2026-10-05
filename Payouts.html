@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payouts</title>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,7 +23,7 @@
                 <a href="discount_codes.html">Discount codes</a>
                 <a href="Users&roles.html">Users & roles</a>
                 <a href="Restaurants.html">Restaurants</a>
-                <a href="Reviews.html" >Reviews</a>
+                <a href="Reviews.html">Reviews</a>
                 <a href="Payouts.html" class="active">Payouts</a>
                 <a href="Settings.html">Settings</a>
             </nav>
@@ -44,7 +43,7 @@
                 </div>
                 <!-- SIGN OUT -->
                 <div>
-                    <button class="sign-out">Sign out</button>
+                    <a href="#" class="sign-out">Sign out</a>
                 </div>
             </div>
         </div>
@@ -65,6 +64,18 @@
                 </div>
             </div>
         </header>
+           <!-- TABLET TOP NAVIGATION -->
+    <nav class="tablet-nav">
+        <a href="dashboard.html" >Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="menu.html" >Menu</a>
+        <a href="discount_codes.html">Discount codes</a>
+        <a href="Users&roles.html">Users & roles</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Payouts.html" class="active">Payouts</a>
+        <a href="Settings.html">Settings</a>
+    </nav>
 
         <main class="content">
             <div class="payouts-page">
@@ -79,45 +90,90 @@
                     </div>
                 </div>
                 <div class="pay-table-wraper">
-                    <table class="">
+                    <table class="data-table">
                         <thead>
-                        <tr>
-                            <th>PERIOD</th>
-                            <th>GROSS</th>
-                            <th>PLATFORM FEE</th>
-                            <th>NET</th>
-                            <th>STATUS</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        <tr>
-                            <td>1 - 20 Feb 2026</td>
-                            <td>AFN 500</td>
-                            <td>- AFN 180</td>
-                            <td>AFN 320</td>
-                            <td>
-                                <span class="pill ready pay-status">Paid</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5 - 17 Jul 2026</td>
-                            <td>AFN 360</td>
-                            <td>- AFN 150</td>
-                            <td>AFN 210</td>
-                            <td>
-                                <span class="pill new pay-status">Scheduled</span>
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
+                            <tr>
+                                <th>PERIOD</th>
+                                <th>GROSS</th>
+                                <th>PLATFORM FEE</th>
+                                <th>NET</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1 - 20 Feb 2026</td>
+                                <td>AFN 500</td>
+                                <td>- AFN 180</td>
+                                <td>AFN 320</td>
+                                <td>
+                                    <span class="pill ready pay-status">Paid</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5 - 17 Jul 2026</td>
+                                <td>AFN 360</td>
+                                <td>- AFN 150</td>
+                                <td>AFN 210</td>
+                                <td>
+                                    <span class="pill new pay-status">Scheduled</span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- MOBILE SIZE TABLE -->
+                <div class="mobile-pay-table-wraper">
+                    <table class="mobile-data-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span style="font-weight: 600; font-size: 12px; color: black;">1 - 20 Feb 2026</span><br>
+                                        <div style="line-height: 20px;"><span>Gross AFN 500 </span><span>Fee-AFN 180</span></div>
+                                        <h3>Net AFN 320</h3>
+                                    </div>
+                                    <span class="pill ready pay-status">Paid</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <span style="font-weight: 600; font-size: 12px; color: black;">1 - 20 Feb 2026</span><br>
+                                        <div style="line-height: 20px;"><span>Gross AFN 500 </span><span>Fee-AFN 180</span></div>
+                                        <h3>Net AFN 320</h3>
+                                    </div>
+                                    <span class="pill new pay-status">Scheduled</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            
-
         </main>
     </div>
+    <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item ">
+            <span class="mobile-icon">⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item active">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
+    <script src="script.js"></script>
 </body>
 
 </html>
