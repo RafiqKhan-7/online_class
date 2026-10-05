@@ -56,10 +56,12 @@
     <div class="main">
         <header class="navbar">
             <div class="page-title">
+                <span>All 0 restaurants</span>
                 <h3>Menu</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
+                <h5>Super admin</h5>
                 <div class="search">
                     <input type="text" placeholder="search orders or customers">
                 </div>
@@ -68,13 +70,27 @@
                 </div>
             </div>
         </header>
+          <!-- TABLET TOP NAVIGATION -->
+    <nav class="tablet-nav">
+        <a href="dashboard.html" >Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="discount_codes.html">Discount codes</a>
+        <a href="Users&roles.html">Users & roles</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Payouts.html">Payouts</a>
+        <a href="Settings.html">Settings</a>
+    </nav>
+    
         <main class="content">
             <div class="add-items">
                 <p>Changes go live in the customer app immediately.</p>
-                <button class="add-items-btn">+Add item</button>
+                <button class="add-items-btn desk">+Add item</button>
+                <button class="add-items-btn mob">+Add</button>
             </div>
             <section class="">
-                <table class="data-table menu">
+                <table class="data-table menu desk-menu">
                     <thead>
                         <tr>
                             <th>SECTION</th>
@@ -110,9 +126,101 @@
                             </td>
                         </tr>
                     </tbody>
+                </table>
+                <!-- MOBILE SIZE TABLE -->
+                 <table class=" mobile-data-table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <h4>Chapli Kabab</h4>
+                                    <span class="">Popular </span><span class="Available"> • Available</span>
+                                </div>
+                                <div class="status">
+                                    <h5>AFN 300</h5>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <h4>Chapli Kabab</h4>
+                                    <span class="">Popular </span><span class="Available"> • Available</span>
+                                </div>
+                                <div class="status">
+                                    <h5>AFN 300</h5>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <h4>Chapli Kabab</h4>
+                                    <span class="">Popular </span><span class="Available"> • Available</span>
+                                </div>
+                                <div class="status">
+                                    <h5>AFN 300</h5>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <h4>Chapli Kabab</h4>
+                                    <span class="">Popular </span><span class="Available"> • Available</span>
+                                </div>
+                                <div class="status">
+                                    <h5>AFN 300</h5>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <h4>Chapli Kabab</h4>
+                                    <span class="">Popular </span><span class="Available"> • Available</span>
+                                </div>
+                                <div class="status">
+                                    <h5>AFN 300</h5>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                 </table>
             </section>
         </main>
     </div>
+      <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item ">
+            <span class="mobile-icon">⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item active">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
 </body>
 
 </html>
