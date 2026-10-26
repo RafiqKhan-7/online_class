@@ -53,10 +53,12 @@
     <div class="main">
         <header class="navbar">
             <div class="page-title">
+                <span>All 0 restaurants</span>
                 <h3>Settings</h3>
                 <h4 class="admin">Super admin</h4>
             </div>
             <div class="search-bar">
+                <h5>Super admin</h5>
                 <div class="search">
                     <input type="text" placeholder="search orders or customers">
                 </div>
@@ -69,11 +71,9 @@
         <!-- CONTENT -->
         <main class="settings-content">
             <div class="settings-grid">
-
                 <!-- Restaurant Profile -->
                 <section class="panel restaurant-profile">
                     <h3>Restaurant profile</h3>
-
                     <div class="cover-photo">
                         <button>Replace cover photo</button>
                     </div>
@@ -94,6 +94,19 @@
                             <label>MINIMUM ORDER</label>
                             <input type="text" value="AFN 200">
                         </div>
+                    </div>
+                    <button class="save-btn">Save changes</button>
+                </section>
+                <!-- MOBILE SECTION -->
+                <section class="panel mobile-restaurant-profile">
+                    <h3>Restaurant profile</h3>
+                    <div class="field">
+                        <label>NAME</label>
+                        <input type="text" value="Sufra Kabab House">
+                    </div>
+                    <div class="field">
+                        <label>ADDRESS</label>
+                        <input type="text" value="Street 15, Shar-e-Naw, Kabul">
                     </div>
                     <button class="save-btn">Save changes</button>
                 </section>
@@ -181,6 +194,25 @@
             </div>
         </main>
     </div>
+        <!-- MOBILE BOTTOM NAVIGATION -->
+    <nav class="mobile-bottom-nav">
+        <a href="dashboard.html" class="mobile-nav-item" >
+            <span class = "mobile-icon" >⌂</span>
+            <span>Home</span>
+        </a>
+        <a href="orders.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Orders</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+            <span class="mobile-icon">□</span>
+            <span>Menu</span>
+        </a>
+        <a href="More.html" class="mobile-nav-item active">
+            <span class="mobile-icon">☰</span>
+            <span> More</span>
+        </a>
+    </nav>
 </body>
 
 </html>
